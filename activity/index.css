@@ -15,7 +15,7 @@ body {
   /* margin: 10px auto; */
 }
 
-nav {
+.nav-bar {
   padding: 0.8rem;
   padding-right: 25px;
   margin-bottom: 2rem;
@@ -26,20 +26,20 @@ nav {
 nav ul {
   display: flex;
   list-style: none;
-  gap: 0.8rem;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
+  gap: 1rem;
   align-items: center;
+  padding-right: 40px;
 }
 
-.nav a {
-  /* color: rgb(62, 162, 247); */
-  color: white;
+nav ul li a {
   text-decoration: none;
-  display: inline-block;
+  color: white;
 }
-.nav a:hover {
-  color: rgb(62, 162, 247);
-  /* background-color: rgb(207, 203, 203); */
+
+nav ul li a:hover {
+  text-decoration: none;
+  color: #1439d9;
 }
 
 nav ul li:first-child {
@@ -47,61 +47,59 @@ nav ul li:first-child {
 }
 
 #intro {
-  padding: 0 0.8rem;
-  text-align: center;
-  /* padding-left: 0.8rem;
-  padding-right: 0.8rem; */
-}
-
-#intro h2 {
-  margin-bottom: 1.5rem;
-}
-
-section {
-  margin-bottom: 40px;
-}
-
-.header {
   text-align: center;
 }
 
-#intro button {
-  margin-top: 20px;
-  padding: 1rem 1rem;
-  background-color: rgb(62, 162, 247);
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  letter-spacing: 1px;
-  transition: background-color 0.3s ease;
-  border-radius: 50px;
-  text-transform: uppercase;
+article {
+  margin: 1.5rem 1rem;
 }
 
-#succeed-info {
-  padding: 0 0.8rem;
-}
-
-#succeed-info h2 {
-  margin-bottom: 1.5rem;
-}
-
-#succeed-info h3 {
-  margin-bottom: 0.8rem;
+article h2 {
+  margin-bottom: 20px;
   text-align: center;
 }
 
-#succeed-info .card {
+#projects .card {
   display: inline-block;
   vertical-align: top;
-  min-height: 175px;
+  min-height: 390px;
   width: 30%;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   padding: 0.8rem 1rem;
   border: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 20px;
+}
+
+.card img {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#skills div {
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  /* margin: 10px auto; */
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#skills ul {
+  list-style: none;
+  /* flex-direction: column; */
 }
 
 #pre-footer {
@@ -111,6 +109,8 @@ section {
   justify-content: space-around;
   padding: 2rem 0;
   color: white;
+
+  margin: 0;
 }
 
 #pre-footer h3 {
@@ -130,6 +130,7 @@ section {
 
 footer {
   padding: 0.7rem;
+  text-align: end;
 }
 footer span {
   margin-left: 0.5rem;
